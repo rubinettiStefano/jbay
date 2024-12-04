@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h2>Lista Merchs</h2>
+  <div th:each="merch : ${merchs}">
+    Name:<span th:text="${merch.name}"></span><br/>
+    Type:<span th:text="${merch.type}"></span>
+    Cost:<span th:text="${merch.cost}"></span><br/>
+    Seller:<span th:text="${merch.seller.username}"></span><br/><br/>
+  </div>
+  <form action="/merch" method="post">
+    <input type="text" name="name" placeholder="Name"/>
+    <input type="text" name="type" placeholder="type"/>
+    <input type="number" name="cost" placeholder="cost"/>
+    <input type="number" name="seller_id" placeholder="seller id"/>
+
+    <input type="submit" value="Salva" />
+  </form>
+  <a href="/">HOME</a>
+</body>
+</html>
