@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .comeUnBottone {
+            display: inline-block; /* Per sembrare un pulsante */
+            padding: 10px 20px; /* Spaziatura interna */
+            font-size: 16px; /* Dimensione del testo */
+            font-weight: bold; /* Testo più marcato */
+            color: #fff; /* Testo bianco */
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); /* Sfondo sfumato */
+            border: none; /* Nessun bordo */
+            border-radius: 25px; /* Angoli arrotondati */
+            text-decoration: none; /* Rimuove la sottolineatura del link */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra per l'effetto 3D */
+            transition: all 0.3s ease; /* Animazioni fluide */
+        }
+
+        .comeUnBottone:hover {
+            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%); /* Cambia sfumatura al passaggio del mouse */
+            transform: translateY(-3px); /* Effetto di sollevamento */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Ombra più pronunciata */
+        }
+
+        .comeUnBottone:active {
+            transform: translateY(0); /* Ritorna piatto */
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Ombra ridotta */
+        }
+
+
+        .comeUnBottone2 {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 10px 15px rgba(255, 117, 140, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .comeUnBottone2:hover {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 20px rgba(255, 117, 140, 0.4), 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .comeUnBottone2:active {
+            transform: translateY(0) scale(0.98);
+            background: linear-gradient(135deg, #ff647d, #ff758c);
+            box-shadow: 0 8px 12px rgba(255, 117, 140, 0.2), 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
 </head>
 <body>
-  <a href="/merch">merchs</a>
-  <a href="/seller">sellers</a>
+  <a href="/merch" class="comeUnBottone">merchs</a>
+  <a href="/seller" class="comeUnBottone2">sellers</a>
 </body>
 </html>
